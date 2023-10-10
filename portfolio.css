@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=League+Spartan:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&family=Dela+Gothic+One&family=Inter:wght@400;500;600;700;800;900&family=League+Spartan:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+* {
+  margin: 1;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  /* background-color: #259b9a; */
+  /* default: #259b9a; */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+html {
+  font-size: 70 rem;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+#element {
+  color: #178582;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*font-family: 'Autour One', cursive;
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+p {
+  font-size: 12px;
+  color: black;
+  margin-top: 200px;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+.left {
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.right {
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  overflow: hidden;
+  width: 100%; /* Full width */
+  background-color: white;
+  position: relative; /* Set the navbar to fixed position */
+  top: 0;
+  left: 0;
+  padding: 1em;
+}
+.main {
+  height: 15px;
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 2px;
+  height: 1px;
+  margin: 2px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation: slideTop 0.5s ease forwards;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+}
+
+.nav-link:hover {
+  color: lightcoral;
+}
+
+.nav-logo {
+  font-weight: 200;
+  color: #178582;
+  font-size: 1.5rem;
+
+  animation: slideRight 1s ease forwards;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+  align-items: center;
+  width: auto;
+  height: 550px;
+  background-repeat: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.firstsection > div {
+  width: 30%;
+}
+
+.leftsection {
+  font-size: 2.3rem;
+  /* margin: 70px 0; */
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.leftsection .btn {
+  padding: 12px;
+  background-color: rgb(20 0 49);
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px, #178582 1px 1px 20px #0053b8f7;
+}
+
+.leftsection .btn:hover {
+  color: #178582;
+  font-size: 1rem;
+  box-shadow: 1px 1px 20px #178582, 1px 1px 20px #0053b8f7;
+}
+.green {
+  color: #178582;
+}
+.btn-box {
+  padding: 12px;
+  background-color: rgb(20 0 49);
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px #178582, 1px 1px 20px #0053b8f7;
+}
+.btn-btn:hover {
+  color: #178582;
+  font-size: 1.02rem;
+  box-shadow: 1px 1px 20px #178582, 1px 1px 20px #0053b8f7;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 0rem;
+}
+.about h2 {
+  font-size: 60px;
+}
+.about p {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+.about h2 span {
+  color: #178582;
+  text-align: center;
+}
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  margin-top: 50px;
+  color: black;
+}
+
+.sub-title span {
+  color: #178582;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  margin-top: 50px;
+}
+
+.sub-title span {
+  color: rgb(170, 107, 228);
+}
+
+.container {
+  padding: 90px;
+}
+
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
+}
+
+.heading1 {
+  font-size: 50 px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bar .bar {
+  margin-top: 50px 0;
+}
+
+.Technical-bar .bar:first-child {
+  margin-top: 60;
+}
+
+.Technical-bar .bar:last-child {
+  margin-bottom: 0px;
+}
+
+.Technical-bar .bar .info {
+  margin-bottom: 5px;
+}
+
+.Technical-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.Technical-bar .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: rgb(139, 139, 255);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 80%;
+}
+.progress-line.javasript span {
+  width: 50%;
+}
+.progress-line.react span {
+  width: 80%;
+}
+.progress-line.python span {
+  width: 80%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 0px;
+  background-color: #947171;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "70%";
+}
+.progress-line.javascript span::after {
+  content: "83%";
+}
+.progress-line.react span::after {
+  content: "78%";
+}
+.progress-line.python span::after {
+  content: "80%";
+}
+
+.progress-line.html span::before {
+  content: "90%";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000000;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.radial-bars {
+  align-content: center;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.radial-bars .radial-bar .progress-line {
+  stroke-width: 10px;
+  stop-color: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+.path {
+  stroke-width: 10;
+  stroke: #178582;
+  fill: black;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50%;
+  }
+}
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 85%;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 70%;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 50%;
+  }
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-left: 30px;
+  margin-top: 130px;
+}
+.contact-text h2 {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+.contact-text h2 span {
+  color: #178582;
+}
+
+.contact-text h4 {
+  margin: 15px 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.contact-list {
+  margin-bottom: 3rem;
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-list i {
+  display: inline-block;
+  color: #178582;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.contact-list li a:hover {
+  transform: scale(1.01) translate(-5px);
+  color: #178582;
+}
+.contact-icons i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #178582;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #178582;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s ease;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.contact-icons i:hover {
+  background: #178582;
+  color: #000;
+  box-shadow: 0 0 20px #178582;
+}
+
+.contact-form form {
+  position: relative;
+}
+.contact-form form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 10px;
+  background: #2f2f42;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contact-form textarea {
+  resize: none;
+  height: 220px;
+}
+.contact-form form .send {
+  display: inline-block;
+  padding: 14px 60px;
+  background-color: #178582;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 1px 1px 20px #178582, 1px 1px 20px #178582;
+}
+.contact-form form .send:hover {
+  background-color: #178582;
+  color: #081b29;
+  box-shadow: 0 0 20px #178582;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.read {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #178582;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 1px 1px 20px #178582, 1px 1px 20px #178582;
+}
+
+.read:hover {
+  background-color: #178582;
+  color: #081b29;
+  box-shadow: 0 0 20px #178582;
+}
+
+.services-list div:hover {
+  transform: translateY(10px);
+}
