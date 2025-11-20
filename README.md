@@ -1,24 +1,2 @@
-# MEANMERN_ASSIGNMENT1
-SOLUTION OF PROBLEM STATEMENT 2:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-It works in both dark and light modes. We can easily swich modes by clicking button on the end of the webpage.
+# MEANMERN_ASSIGNMENT
+It works in both dark and light themes. We can easily switch by clicking button on the end of the webpage.
